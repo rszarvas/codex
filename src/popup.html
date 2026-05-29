@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Videó mentése</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header>
+      <h1>Videó mentése</h1>
+      <button id="refresh" type="button">Frissítés</button>
+    </header>
+
+    <p class="hint">
+      Csak közvetlenül elérhető, nem DRM-védett videókat vagy manifesteket ment. A Chrome biztonsági szabályai miatt a cél a Letöltések mappán belüli almappa.
+    </p>
+
+    <main id="media-list" class="media-list" aria-live="polite"></main>
+
+    <footer>
+      <button id="open-options" type="button">Beállítások</button>
+      <span id="status" role="status"></span>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
