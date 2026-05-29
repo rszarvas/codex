@@ -1,0 +1,45 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 32px;
+}
+
+main {
+  max-width: 640px;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input[type="text"] {
+  font: inherit;
+  padding: 8px 10px;
+}
+
+.checkbox {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  font-weight: 400;
+}
+
+.help,
+#status {
+  color: #666;
+  margin: 0;
+}
+
+button {
+  justify-self: start;
+  padding: 8px 14px;
+}

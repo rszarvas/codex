@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Video Stream Mentő beállítások</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main>
+      <h1>Beállítások</h1>
+      <form id="options-form">
+        <label for="target-folder">Cél almappa a Chrome Letöltések mappáján belül</label>
+        <input id="target-folder" name="targetFolder" type="text" placeholder="VideoStreamMento" autocomplete="off">
+        <p class="help">
+          Példa: <strong>Videok/Tananyag</strong>. A Chrome bővítmények nem írhatnak tetszőleges abszolút könyvtárba, ezért itt a Letöltések mappán belüli relatív útvonal adható meg.
+        </p>
+
+        <label class="checkbox">
+          <input id="save-as" name="saveAs" type="checkbox">
+          Mentés előtt mindig jelenjen meg a Chrome mentési párbeszédablaka
+        </label>
+
+        <button type="submit">Mentés</button>
+        <p id="status" role="status"></p>
+      </form>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>
